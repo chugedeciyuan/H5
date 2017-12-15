@@ -1,0 +1,123 @@
+/*公共样式*/
+.page{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+#page1 {
+    display:block;
+    background: #fefefe;
+}
+#page1 .bg{
+    background: url(../img/bg.jpg) no-repeat;
+    width: 100%;
+    background-size: 100%;
+    height: 100%;
+    position: absolute;
+}
+#page1 .text{
+    background: url(../img/tamen.png) no-repeat;
+    width: 100%;
+    background-size: 50%;
+    height: 100%;
+    background-position: 62% 55%;
+    position: absolute;
+}
+#page1 .bt{
+    position: absolute;
+    color: #fefefe;
+    left: 41%;
+    bottom: 15%;
+    font-size: 2.5rem;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+
+}
+
+
+
+
+#page2{
+    background-size: 100% 100%;
+}
+#page2 .text{
+    font-size: 16px;
+    padding: 10px;
+    background: url(../img/bg2.jpg);
+    color: #68a2fb;
+    
+}
+#page2 .left,#page2 .right{
+    width: 50%;
+}
+#page2 .left{
+width: 38%;
+    margin-right: 14%;
+    position: absolute;
+    top: 47px;
+}
+#page2 .right{
+    width: 40%;
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+#page2 .tp{
+    position: relative;
+    height: 195px;
+}
+#page2 .xin{
+    position: absolute;
+     left: 48%;
+    top: 50%;
+    color:red;
+-webkit-animation:pulse 1s .2s ease both infinite;
+-moz-animation:pulse 1s .2s ease both infinite;
+}
+
+.text-r{
+    text-align: right;
+}
+
+@-webkit-keyframes pulse{
+0%{-webkit-transform:scale(1)}
+50%{-webkit-transform:scale(1.5)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes pulse{
+0%{-moz-transform:scale(1)}
+50%{-moz-transform:scale(1.5)}
+100%{-moz-transform:scale(1)}
+}
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #228DFF,
+               0 0 70px  #228DFF,
+               0 0 80px  #228DFF,
+               0 0 100px #228DFF,
+               0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #228DFF,
+               0 0 35px #228DFF,
+               0 0 40px #228DFF,
+               0 0 50px #228DFF,
+               0 0 75px #228DFF;
+  }
+}
